@@ -7,6 +7,10 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    background: linear-gradient(
+        125deg,
+        #f5f7fa, 
+        #e5edf3);
 }
 
 .wrapper {
@@ -27,6 +31,11 @@ a {
     padding: 0;
     color: #353434;
     width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+    border-radius: 5px;
 }
 
 .nav-bar.wrapper{
@@ -114,16 +123,18 @@ i {
 
 .hero.section {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 20px;
+    padding: 0 20px;
 }
 
 .hero.wrapper {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero-img {
-    width: 50%;
+    width: 35%;
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -136,6 +147,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 3px;
     color: #333;   
+    text-align: center;
 }
 
 h2 {
@@ -144,6 +156,7 @@ h2 {
     font-weight: 400;
     color: #555;
     margin:  20px auto;
+    text-align: center;
 }
 
 .CTA-buttons {
@@ -161,6 +174,7 @@ h2 {
     border-radius: 25px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .CTA-buttons a:hover {
@@ -187,16 +201,16 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
-    margin: 80px auto 10px auto;
-    color: #444;
+    color: #111111;
     letter-spacing: 1px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
 .feature-card h4 {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #fff;
+    color: #333;
 }
 
 .features.grid {
@@ -207,7 +221,7 @@ h3 {
 }
 
 .feature-card {
-  background: #95b3f7;
+  background: #caf1ee;
   border: 1px solid #cbcbe6;
   border-radius: 16px;
   padding: 50px;
@@ -224,7 +238,39 @@ h3 {
 
 .feature-card p {
   font-size: 1rem;
-  color: #ffffffb2;
+  color: #555;
+}
+
+.demo {
+  color: #111111;
+  padding: 0 20px;
+  width: 100%;
+  margin: none;
+}
+
+.demo.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.demo.wrapper p {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-bottom: 60px;
+}
+
+.demo-canvas {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  height: 400px;
+  position: relative;
 }
 
 

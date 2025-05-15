@@ -71,7 +71,7 @@
                 </div>
             </section>
             <section class="demo">
-                <div class="demo-wrapper">
+                <div class="demo wrapper">
                     <h3>See Pulsepoint in Action: Your Metrics, Real-Time Magic</h3>
                     <p>Interactive charts that bring your metrics to the forefront—see what's thriving, and what's not.</p>
                     <div class="demo-canvas">
@@ -85,13 +85,6 @@
                     <div class="pricing-card">
                         <h4>Starter Plan</h4>
                         <p>Perfect for solo creators and small projects.</p>
-                        <ul>
-                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> 1 Dashboard</li>
-                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i></i> Basic Metrics</li>
-                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Email Support</li>
-                            <li>Start Free Trial</li>
-                        </ul>
-                    </div>
                         <h4>Starter Plan</h4>
                         <p class="price">$12/month</p>
                         <p>Perfect for solo creators and small projects.</p>
@@ -103,7 +96,7 @@
                         </ul>
                     </div>
                         <h4>Growth Plan</h4>
-                        <p class="price">$29/month</p>
+                        <p class="pricing-card">$29/month</p>
                         <p>Best for growing teams and serious creators.</p>
                         <ul>
                             <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> 5 Dashboard</li>
@@ -116,7 +109,7 @@
                     </div>
                     </div>
                         <h4>Enterprise Plan</h4>
-                        <p class="price">Custom</p>
+                        <p class="pricing-card">Custom</p>
                         <p>Tailored for large organizations or agencies.</p>
                         <ul>
                             <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Unlimited Everything</li>
@@ -175,28 +168,77 @@
             </div>
             <p>© 2025 PulsePoint. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
-            window.onload = function() {
-                var ctx = document.getElementById('myChart').getContext('2d');
-                
-                var myChart = new Chart(ctx, {
-                    type: 'line', 
-                    data: {
-                        labels: ['January', 'February', 'March', 'April', 'May'],
-                        datasets: [{
-                            label: 'Page Views',
-                            data: [12, 19, 3, 5, 2], 
-                            borderColor: 'rgba(75, 192, 192, 1)', 
-                            fill: false 
-                        }]
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    window.onload = function () {
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(75, 192, 192, 0.4)');
+        gradient.addColorStop(1, 'rgba(75, 192, 192, 0)');
+
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Page Views',
+                    data: [12, 19, 3, 5, 2],
+                    borderColor: '#B197FC', 
+                    backgroundColor: 'rgba(177, 151, 252, 0.2)', 
+                    fill: true,
+                    tension: 0.3 
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 2000,
+                    easing: 'easeOutQuart'
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#111',
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        }
                     },
-                    options: {
-                        responsive: true, 
-                        maintainAspectRatio: false, 
+                    tooltip: {
+                        backgroundColor: '#fff',
+                        titleColor: '#111',
+                        bodyColor: '#333',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        titleFont: {
+                            weight: 'bold'
+                        }
                     }
-                });
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: '#111'
+                        },
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#111'
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    }
+                }
             }
-        </script>
+        });
+    }
+</script>
     </body>
 </html>
