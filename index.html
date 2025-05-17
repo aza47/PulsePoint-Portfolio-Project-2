@@ -9,8 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
         <title>PulsePoint</title>
     </head>
-    <body>
-
+    <body class="dark">
         <main>
             <section class="nav-bar">
                 <div class="nav-bar wrapper">
@@ -20,12 +19,12 @@
                     </span>
                         <button class="hamburger"><i class="fas fa-bars"></i></button>
                     <span class="nav" id="bar">
-                        <p><a href="#">Features</a></p>
-                        <p><a href="#">Pricing</a></p>
-                        <p><a href="#">Testimonials</a></p>
-                        <p><a href="#">Login</a></p>
-                        <p><a href="pricing.html">Start Free Trial</a></p>
-                        <button id="dark-mode-toggle">Dark Mode</button>
+                        <p><a href="#features">Features</a></p>
+                        <p><a href="#demo1">Demo</a></p>
+                        <p><a href="#pricing">Pricing</a></p>
+                        <p><a href="#problem-solution">Problems & Solutions</a></p>
+                        <p><a href="#newsletter">Newsletter</a></p>
+                        <a class="free-trial-button" href="pricing.html">Start Free Trial</a>
                     </span>
                 </div>
             </section>
@@ -41,7 +40,7 @@
                     <p class="hero-p">Trusted by 1,200+ creators & agencies</p>
                 </div>
             </section>
-            <section class="features">
+            <section id="features" class="features">
                 <h3>Intuitive Features, Exceptional Outcomes</h3>
                 <div class="features grid">
                     <div class="feature-card card-1">
@@ -70,7 +69,7 @@
                     </div>
                 </div>
             </section>
-            <section class="demo">
+            <section id="demo1" class="demo">
                 <div class="demo wrapper">
                     <h3>See Pulsepoint in Action: Your Metrics, Real-Time Magic</h3>
                     <p>Interactive charts that bring your metrics to the forefront—see what's thriving, and what's not.</p>
@@ -79,7 +78,7 @@
                     </div>
                 </div>
             </section>
-            <section class="pricing">
+            <section id="pricing" class="pricing">
                 <h3>Flexible Pricing for Every Stage</h3>
                 <div class="pricing wrapper">
                     <div class="pricing-card card-1">
@@ -119,7 +118,7 @@
                     </div>
                 </div>
             </section>
-            <section class="problem-solution">
+            <section id="problem-solution" class="problem-solution">
                 <h3>Your Metrics Are a Mess. Let's Fix That.</h3>
                 <div class="problem-solution wrapper">
                     <div class="problem">
@@ -154,7 +153,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="newsletter">
                 <div class="newsletter-sign-up wrapper">
                     <h3>Keep a Finger on the Pulse</h3>
                     <form action="#" id="newsletter-form">
@@ -172,77 +171,77 @@
             </div>
             <p>© 2025 PulsePoint. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </footer>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    window.onload = function () {
-        const ctx = document.getElementById('myChart').getContext('2d');
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        window.onload = function () {
+            const ctx = document.getElementById('myChart').getContext('2d');
 
-        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-        gradient.addColorStop(0, 'rgba(75, 192, 192, 0.4)');
-        gradient.addColorStop(1, 'rgba(75, 192, 192, 0)');
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(75, 192, 192, 0.4)');
+            gradient.addColorStop(1, 'rgba(75, 192, 192, 0)');
 
-        const myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-                datasets: [{
-                    label: 'Page Views',
-                    data: [12, 19, 3, 5, 2],
-                    borderColor: '#B197FC', 
-                    backgroundColor: 'rgba(177, 151, 252, 0.2)', 
-                    fill: true,
-                    tension: 0.3 
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: {
-                    duration: 2000,
-                    easing: 'easeOutQuart'
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                    datasets: [{
+                        label: 'Page Views',
+                        data: [12, 19, 3, 5, 2],
+                        borderColor: '#B197FC', 
+                        backgroundColor: 'rgba(177, 151, 252, 0.2)', 
+                        fill: true,
+                        tension: 0.3 
+                    }]
                 },
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: '#111',
-                            font: {
-                                size: 16,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#111',
+                                font: {
+                                    size: 16,
+                                    weight: 'bold'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: '#fff',
+                            titleColor: '#111',
+                            bodyColor: '#333',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            titleFont: {
                                 weight: 'bold'
                             }
                         }
                     },
-                    tooltip: {
-                        backgroundColor: '#fff',
-                        titleColor: '#111',
-                        bodyColor: '#333',
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1,
-                        titleFont: {
-                            weight: 'bold'
-                        }
-                    }
-                },
-                scales: {
-                    x: {
-                        ticks: {
-                            color: '#111'
+                    scales: {
+                        x: {
+                            ticks: {
+                                color: '#111'
+                            },
+                            grid: {
+                                display: false
+                            }
                         },
-                        grid: {
-                            display: false
-                        }
-                    },
-                    y: {
-                        ticks: {
-                            color: '#111'
-                        },
-                        grid: {
-                            color: 'rgba(0, 0, 0, 0.05)'
+                        y: {
+                            ticks: {
+                                color: '#111'
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
                         }
                     }
                 }
-            }
-        });
-    }
-</script>
+            });
+        }
+    </script>
     </body>
 </html>
