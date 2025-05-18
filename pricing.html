@@ -4,52 +4,58 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
         <title>PulsePoint Pricing Page</title>
     </head>
     <body>
         <main>
             <div class="hero">
-                <h1> Your Success Starts Here</h1>
-                <h2>ick the perfect plan and watch your business thrive with our powerful tools.</h2>
+                <h1>Your Success Starts Here</h1>
+                <h2>Pick the perfect plan and watch your business thrive with our powerful tools.</h2>
             </div>
-            <div class="pricing grid">
-                <div>
-                    <h4>Starter Plan</h4>
-                    <p class="price">$12/month</p>
-                    <p>Perfect for solo creators and small projects.</p>
-                    <ul>
-                        <li>✅ 1 Dashboard</li>
-                        <li>✅ 3 Integrations</li>
-                        <li>✅ Basic Metrics</li>
-                        <li>✅ Email Support</li>
-                        <li>Start Free Trial</li>
-                    </ul>
+            <section id="pricing" class="pricing">
+                <h3>Flexible Pricing for Every Stage</h3>
+                <div class="pricing wrapper">
+                    <div class="pricing-card card-1">
+                        <h4>Starter Plan</h4>
+                        <p class="price">$12/month</p>
+                        <p>Perfect for solo creators and small projects.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> 3 Integrations</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Basic Metrics</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Email Support</li>
+                        </ul>
+                        <p><a href="pricing.html">Start Free Trial</a></p>
+                    </div>
+                    <div class="pricing-card card-2">
+                        <h4>Growth Plan</h4>
+                        <p class="price">$29/month</p>
+                        <p>Best for growing teams and serious creators.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> 5 Dashboard</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Unlimited Integrations</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Real-Time Alerts</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Smart Insights</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Priority Support</li>
+                        </ul>
+                        <p><a href="pricing.html">Start Free Trial</a></p>
+                    </div>
+                    <div class="pricing-card card-3">
+                        <h4>Enterprise Plan</h4>
+                        <p class="price">Custom</p>
+                        <p>Tailored for large organizations or agencies.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Unlimited Everything</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Dedicated Account Manager</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #B197FC;"></i> Custom SLAs</li>
+                        </ul>
+                        <p><a href="mailto:contact@pulsepoint.test">Contact Sales</a></p>
+                    </div>
                 </div>
-                    <h4>Growth Plan</h4>
-                    <p class="price">$29/month</p>
-                    <p>Best for growing teams and serious creators.</p>
-                    <ul>
-                        <li>✅ 5 Dashboard</li>
-                        <li>✅ Unlimited Integrations</li>
-                        <li>✅ Real-Time Alerts</li>
-                        <li>✅ Smart Insights</li>
-                        <li>✅ Priority Support</li>
-                        <li>Start Free Trial</li>
-                    </ul>
-                </div>
-                </div>
-                    <h4>Enterprise Plan</h4>
-                    <p class="price">Custom</p>
-                    <p>Tailored for large organizations or agencies.</p>
-                    <ul>
-                        <li>✅ Unlimited Everything</li>
-                        <li>✅ Dedicated Account Manager</li>
-                        <li>✅ Custom SLAs</li>
-                        <li>✅ Onboarding + Training</li>
-                        <li>Contact Sales</li>
-                    </ul>
-                </div>
-            </div>
+            </section>
+            <h3 class="FRQ-title">Frequently Asked Questions</h3>
             <div class="FRQ wrapper">
                 <input type="checkbox" class="FRQ-question" id="q1">
                     <label for="q1">How is PulsePoint different from Google Analytics?</label>
@@ -73,68 +79,76 @@
                 </div>
             </div>
             <div class="pricing table">
-                <div id="plan">
-                    <span class="plan">Free</span>
-                    <span class="plan">Pro</span>
-                    <span class="plan">Custom</span>
+                <h3>Choose the Right Plan for You</h3>
+                <div class="outer">
+                    <div id="plan">
+                        <span class="plan">Free</span>
+                        <span class="plan">Pro</span>
+                        <span class="plan">Custom</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Price</th>
+                            <td>$0/month</td>
+                            <td>$29/month</td>
+                            <td>$99/month</td>
+                        </tr>
+                        <tr>
+                            <th>Ideal For</th>
+                            <td>Solo creators</td>
+                            <td>Growing teams & freelancers</td>
+                            <td>Agencies & data-driven orgs</td>
+                        </tr>
+                        <tr>
+                            <th>Real-Time Analytics</th>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Custom Dashboards</th>
+                            <td><i class="fa-solid fa-xmark fa-2x" style="color: #E0BBFF;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Team Workspaces</th>
+                            <td><i class="fa-solid fa-xmark fa-2x" style="color: #E0BBFF;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Smart Alerts</th>
+                            <td><i class="fa-solid fa-xmark fa-2x" style="color: #E0BBFF;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Integrations (GA, Slack, etc.)</th>
+                            <td>Limited</td>
+                            <td>All</td>
+                            <td>All + API Access</td>
+                        </tr>
+                        <tr>
+                            <th>Historical Trend Analysis</th>
+                            <td><i class="fa-solid fa-xmark fa-2x" style="color: #E0BBFF;"></i></td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i> (3 mo.)</td>
+                            <td><i class="fa-solid fa-check fa-2x" style="color: #c2bef8;"></i> (12 mo.)</td>
+                        </tr>
+                        <th>Trial</th>
+                            <td>Always Free</td>
+                            <td>14-day free trial</td>
+                            <td>14-day free trial</td>
+                    </table>
                 </div>
-                <table>
-                    <tr>
-                        <th>Price</th>
-                        <td>$0/month</td>
-                        <td>$29/month</td>
-                        <td>$99/month</td>
-                    </tr>
-                    <tr>
-                        <th>Ideal For</th>
-                        <td>Solo creators</td>
-                        <td>Growing teams & freelancers</td>
-                        <td>Agencies & data-driven orgs</td>
-                    </tr>
-                    <tr>
-                        <th>Real-Time Analytics</th>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                    </tr>
-                    <tr>
-                        <th>Custom Dashboards</th>
-                        <td>❌</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                    </tr>
-                    <tr>
-                        <th>Team Workspaces</th>
-                        <td>❌</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                    </tr>
-                    <tr>
-                        <th>Smart Alerts</th>
-                        <td>❌</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                    </tr>
-                    <tr>
-                        <th>Integrations (GA, Slack, etc.)</th>
-                        <td>Limited</td>
-                        <td>All</td>
-                        <td>All + API Access</td>
-                    </tr>
-                    <tr>
-                        <th>Historical Trend Analysis</th>
-                        <td>❌</td>
-                        <td>✅ (3 mo.)</td>
-                        <td>✅ (12 mo.)</td>
-                    </tr>
-                    <th>Trial</th>
-                        <td>Always Free</td>
-                        <td>14-day free trial</td>
-                        <td>14-day free trial</td>
-                </table>
             </div>
         </main>
-        <footer>
+       <footer>
+            <div class="social-icons wrapper">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
             <p>© 2025 PulsePoint. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </footer>
     </body>
