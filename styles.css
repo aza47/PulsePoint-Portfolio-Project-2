@@ -603,11 +603,27 @@ footer a {
 }
 
 .hero {
-  margin: 150px auto 50px auto;
+  margin: 50px auto;
 }
 
 .hero h1 {
   color: #6136f0b0;
+}
+
+.btn-back {
+  display: inline-block;
+  margin: 1.5rem 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #6136f062;
+  color: #111111;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #c2d4f5;
 }
 
 .FRQ-title {
