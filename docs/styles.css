@@ -868,3 +868,42 @@ i {
       width: 100px;
     }
 }
+
+@media (max-width: 375px) {
+  /* Stack layout and reduce padding for mobile */
+  .problem-solution.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  /* Adjust font sizes for small screens */
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Pricing table: make it scrollable horizontally */
+  .pricing.table {
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  table {
+    width: 600px; /* wider than screen so scroll works */
+    font-size: 13px;
+  }
+
+  /* FAQ section */
+  .faq-container {
+    padding: 0 16px;
+  }
+
+  /* Buttons or CTAs */
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+  }
+}
