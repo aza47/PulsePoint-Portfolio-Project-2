@@ -682,7 +682,9 @@ footer a {
     background-color: #dedaf3;
 }
 
-
+.pricing.table h3 {
+  margin-bottom: 400px;
+}
 
 .pricing.table {
   width: 100%;
