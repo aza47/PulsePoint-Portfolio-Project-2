@@ -786,6 +786,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
+i {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
 @media (max-width: 768px) {
   .problem-solution.wrapper {
     grid-template-columns: 1fr;
@@ -798,11 +804,7 @@ footer a:hover {
   }
 }
 
-i {
-  font-size: 1.8rem;
-  margin-top: 20px;
-  color: whitesmoke;
-}
+
 
 @media screen and (max-width: 1500px) {
 
