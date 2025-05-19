@@ -877,11 +877,7 @@ i {
   }
 
   /* Stack feature section */
-  .features.grid {
-    grid-template-columns: 1fr;
-  }
-
-
+  .features.grid,
   .feature-card {
     display: flex;
     flex-direction: column;
