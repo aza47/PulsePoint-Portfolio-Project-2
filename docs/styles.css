@@ -799,8 +799,6 @@ i {
   .problem-solution.wrapper {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding: 0 40px !important;
-  }
 
   .problem-solution h3 {
     font-size: 1.75rem;
