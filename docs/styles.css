@@ -819,6 +819,8 @@ i {
 
     .pricing.wrapper {
       flex-direction: column;
+      padding: 0 20px;
+
     }
 
     .pricing-card.card-2 {
@@ -867,6 +869,15 @@ i {
     #plan .plan {
       width: 100px;
     }
+
+    .newsletter-sign-up.wrapper {
+      padding: 35px;
+      text-align: center;
+    }
+
+    #newsletter-form {
+      text-align: center;
+    }
 }
 @media (max-width: 375px) {
   /* General page padding */
@@ -892,7 +903,7 @@ i {
   }
 
   .feature-card h4 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   /* Stack pricing plans vertically */
