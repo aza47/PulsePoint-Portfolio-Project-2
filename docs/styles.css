@@ -948,7 +948,7 @@ i {
   .features.grid {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
     padding: 0;
   }
