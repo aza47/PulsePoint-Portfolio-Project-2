@@ -21,9 +21,9 @@ a {
 }
 
 .nav-bar {
-    position: sticky;
-    top: 0;
-    right: 0;
+    position: sticky !important;
+    top: 0 !important;
+    right: 0 !important;
     background-color: white;
     margin: 0;
     padding: 0;
