@@ -626,11 +626,13 @@ footer a {
   margin: 1.5rem 2rem;
   padding: 0.5rem 1rem;
   background-color: #6036e94b;
-  color: #111111;
+  color: #555;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.3s;
+  border: none;
+
 }
 
 .btn-back:hover {
@@ -813,6 +815,8 @@ i {
   .CTA-buttons {
     width: 100%;
   }
+
+
 }
 
 
@@ -927,23 +931,22 @@ i {
     display: block;
     width: 100%;
     text-align: center;
+    padding: none;
+    margin: none;
+    align-content: center;
   }
 
-  .pricing.table tr {
-    margin-bottom: 24px;
-  }
 
   .pricing.table th {
     background-color: #f0f4ff;
     font-weight: bold;
-    padding-top: 20px;
     border-top: 1px solid #ccc;
   }
 
   .pricing.table td {
-    padding: 10px 0;
     border-bottom: 1px solid #eee;
   }
+
 
   /* Hide the plan labels if using them separately */
   #plan {

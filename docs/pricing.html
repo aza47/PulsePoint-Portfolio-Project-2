@@ -152,5 +152,11 @@
             </div>
             <p>© 2025 PulsePoint. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </footer>
+    <script>
+            if (window.innerWidth <= 768) {
+            const btn = document.querySelector(".btn-back"); // or use getElementById
+            if (btn) btn.innerText = "← Go Back";
+            }
+            </script>
     </body>
 </html>
