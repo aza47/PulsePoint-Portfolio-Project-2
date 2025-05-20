@@ -871,7 +871,6 @@ i {
     }
 
     .newsletter-sign-up.wrapper {
-      padding: 35px;
       text-align: center;
     }
 
@@ -904,6 +903,21 @@ i {
 
   .feature-card h4 {
     margin-bottom: 15px;
+    color: blue;
+  }
+
+  #newsletter-form {
+    padding: none;
+  }
+
+
+  .newsletter-sign-up.wrapper {
+    padding-left: none;
+    padding-right: none;
+    margin-left: none;
+    margin-right: none;
+    width: 80%;
+
   }
 
   /* Stack pricing plans vertically */
