@@ -164,6 +164,8 @@ h2 {
     justify-content: space-evenly;
     margin: 20px auto;
     width: 50%;
+    padding: none;
+    margin: none;
 }
 
 .button {
@@ -175,6 +177,7 @@ h2 {
     text-decoration: none;
     transition: background-color 0.3s ease;
     text-align: center;
+    width: 100%;
 }
 
 .CTA-buttons a:hover {
@@ -337,7 +340,10 @@ h3 {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+}
 
+.pricing h3 {
+  margin-bottom: 50px;
 }
 
 .pricing-card {
@@ -803,13 +809,17 @@ i {
   .problem-solution h3 {
     font-size: 1.75rem;
   }
+
+  .CTA-buttons {
+    width: 100%;
+  }
 }
 
 
 
 @media screen and (max-width: 1500px) {
 
-    .nav, #bar a, #dark-mode-toggle {
+    .nav, #bar a{
         font-size: 0.9rem;
     }
     
@@ -820,7 +830,6 @@ i {
     .pricing.wrapper {
       flex-direction: column;
       padding: 0 20px;
-
     }
 
     .pricing-card.card-2 {
@@ -870,15 +879,15 @@ i {
       width: 100px;
     }
 
-    .newsletter-sign-up.wrapper {
-      text-align: center;
-    }
+  .newsletter-sign-up.wrapper {
+    padding-left: none;
+    padding-right: none;
+    margin-left: none;
+    margin-right: none;
+    width: 80%;
+    text-align: center;
+  }
 
-    #newsletter-form {
-      text-align: center;
-    }
-}
-@media (max-width: 375px) {
   /* General page padding */
   body {
     padding: 0 16px;
@@ -903,21 +912,6 @@ i {
 
   .feature-card h4 {
     margin-bottom: 15px;
-    color: blue;
-  }
-
-  #newsletter-form {
-    padding: none;
-  }
-
-
-  .newsletter-sign-up.wrapper {
-    padding-left: none;
-    padding-right: none;
-    margin-left: none;
-    margin-right: none;
-    width: 80%;
-
   }
 
   /* Stack pricing plans vertically */
@@ -962,4 +956,13 @@ i {
     max-width: 100vw;
     overflow-x: hidden;
   }
+
+  .pricing {
+    padding: none;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
 }
